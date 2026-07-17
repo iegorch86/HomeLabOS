@@ -19,7 +19,9 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* into the image root
-
+ - type: script
+    snippets:
+      - "dnf5 -y upgrade"
   - type: dnf
     repos:
       copr:
@@ -64,7 +66,17 @@ modules:
         # errors that these aren't installed, delete this remove block.
         - firefox
         - firefox-langpacks
-
+ # RPM Fusion + codecs
+  - type: dnf
+    repos:
+      nonfree: rpmfusion          # enables RPM Fusion Free + Nonfree
+    replace:
+      - from-repo: rpmfusion-free
+        packages:
+          - ffmpeg                # swap Fedora's ffmpeg-free for the full build
+    install:
+      packages:
+        - "@multimedia"           # multimedia group: gstreamer plugins + codecs
   # Homebrew via the dedicated BlueBuild module (installs + auto-update timers)
   - type: brew
 
