@@ -31,6 +31,7 @@ modules:
         # COSMIC desktop, installed from Fedora repos → each build pulls the latest stable
         - "@cosmic-desktop-environment"
         # terminal
+        - fastfetch
         - micro
         - starship
         # virtualization
