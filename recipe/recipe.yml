@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/iegorch86/homelabos
-name: HomeLabOS
+name: homelabos # must be lowercase — used as the container image/stage name
 description: Personal COSMIC atomic image — home lab workstation.
 
 # Base: BlueBuild's Fedora COSMIC image with the NVIDIA open driver baked in
