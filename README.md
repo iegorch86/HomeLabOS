@@ -1,4 +1,4 @@
-# HomeLabOS &nbsp; [![bluebuild build badge](https://github.com/iegorch86/homelabos/actions/workflows/build.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build.yml)
+# GooseOS &nbsp; [![bluebuild build badge](https://github.com/iegorch86/homelabos/actions/workflows/build.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build.yml)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
@@ -11,8 +11,8 @@ After setup, it is recommended you update this README to describe your custom im
 
 Two variants are available:
 
-- **HomeLabOS NVIDIA** — for systems using supported NVIDIA graphics and the NVIDIA open kernel modules.
-- **HomeLabOS Intel/Generic** — for Intel, AMD, virtual machines, and systems that do not require the NVIDIA driver.
+- **GooseOS NVIDIA** — for systems using supported NVIDIA graphics and the NVIDIA open kernel modules.
+- **GooseOS Intel/Generic** — for Intel, AMD, virtual machines, and systems that do not require the NVIDIA driver.
 
 ### NVIDIA version
 
