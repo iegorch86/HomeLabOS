@@ -27,6 +27,9 @@ modules:
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
+      # Skip weak deps (Recommends) — keeps GDM, Rhythmbox, nheko, Rygel, Thunderbird,
+      # etc. from being pulled in by the COSMIC group. Cuts the class at the source.
+      install-weak-deps: false
       packages:
         # COSMIC desktop, installed from Fedora repos → each build pulls the latest stable
         - "@cosmic-desktop-environment"
@@ -53,10 +56,12 @@ modules:
         - perf
         # browser (native, from Brave repo above)
         - brave-browser
-    # Firefox intentionally KEPT as a backup browser — no remove block.
-remove:
+    # Firefox intentionally KEPT as a backup browser — not removed below.
+    remove:
       packages:
-        - gdm
+        - gdm                 # drags in the GNOME session; cosmic-greeter is the DM
+        - gnome-disk-utility  # redundant with gparted
+
   # Homebrew (not in the base)
   - type: brew
 
