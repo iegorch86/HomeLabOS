@@ -14,7 +14,7 @@ modules:
     install:
       packages:
         - switcheroo-control
-    - type: os-release
+  - type: os-release
     properties:
       NAME: GooseOS
       PRETTY_NAME: GooseOS NVIDIA Open
