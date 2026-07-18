@@ -1,14 +1,10 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image publishes to ghcr.io/iegorch86/homelabos
-name: homelabos
-description: Personal COSMIC atomic image — DE-less NVIDIA base with COSMIC layered from Fedora repos.
 
-# DE-less NVIDIA-open base (Fedora 44 base-atomic + nvidia). Codecs (negativo17) and
-# the QOL package set are already baked in via the base's common.yml — so no RPM Fusion,
-# and distrobox/tcpdump/traceroute/htop/etc. come from the base.
+name: homelabos
+description: Personal COSMIC atomic image — NVIDIA base with COSMIC layered from Fedora repos.
+
 base-image: ghcr.io/blue-build/base-images/fedora-base-nvidia-open
-# CONFIRM tags on the ghcr package page; pin to 44 for stability if you prefer.
 image-version: latest
 
 modules:
@@ -21,50 +17,50 @@ modules:
     repos:
       copr:
         - atim/starship
-      # Brave official RPM repo + key
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+
     install:
-  #install-weak-deps: false
-    packages:
-    # COSMIC desktop only
-    - "@cosmic-desktop"
+      install-weak-deps: false
+      packages:
+        # COSMIC desktop
+        - "@cosmic-desktop"
 
-    # Selected additional desktop applications
-    - gnome-calculator
-    - okular
+        # Selected desktop applications
+        - gnome-calculator
+        - okular
 
-    # terminal
-    - fastfetch
-    - micro
-    - starship
+        # Terminal
+        - fastfetch
+        - micro
+        - starship
 
-    # virtualization
-    - qemu-kvm
-    - libvirt
-    - virt-manager
-    - virt-viewer
+        # Virtualization
+        - qemu-kvm
+        - libvirt
+        - virt-manager
+        - virt-viewer
 
-    # network diagnostics
-    - nmap
-    - mtr
-    - iperf3
-    - bind-utils
-    - wireshark-cli
+        # Network diagnostics
+        - nmap
+        - mtr
+        - iperf3
+        - bind-utils
+        - wireshark-cli
 
-    # disk management
-    - gparted
+        # Disk management
+        - gparted
 
-    # profiling
-    - sysprof
-    - bpftrace
-    - perf
+        # Profiling
+        - sysprof
+        - bpftrace
+        - perf
 
-    # browser
-    - brave-browser
-    # Homebrew (not in the base)
+        # Browser
+        - brave-browser
+
   - type: brew
 
   - type: default-flatpaks
@@ -72,14 +68,15 @@ modules:
       - notify: true
         scope: system
         install:
-          - app.zen_browser.zen            # Zen browser
-          - org.kde.kate                   # Kate editor
-          - org.kde.kdenlive               # Kdenlive
-          - org.shotcut.Shotcut            # Shotcut
-          - com.ranfdev.DistroShelf        # distrobox GUI — confirm ID on Flathub
-          - com.github.tchx84.Flatseal     # Flatpak permissions
-          - io.podman_desktop.PodmanDesktop # Podman Desktop — confirm ID on Flathub
-          - io.missioncenter.MissionCenter # MissionCenter
+          - app.zen_browser.zen
+          - org.kde.kate
+          - org.kde.kdenlive
+          - org.shotcut.Shotcut
+          - com.ranfdev.DistroShelf
+          - com.github.tchx84.Flatseal
+          - io.podman_desktop.PodmanDesktop
+          - io.missioncenter.MissionCenter
+
       - scope: user
 
   - type: signing
