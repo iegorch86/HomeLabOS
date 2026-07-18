@@ -9,4 +9,4 @@ image-version: latest
 
 modules:
   - from-file: common-modules.yml
-- type: signing
+  - type: signing
