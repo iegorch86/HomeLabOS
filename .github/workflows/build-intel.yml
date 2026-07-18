@@ -1,4 +1,4 @@
-name: bluebuild
+name: gooseos-intel
 on:
   schedule:
     - cron:
@@ -27,7 +27,7 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - homelabos-intel.yml
+          - gooseos-intel.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
