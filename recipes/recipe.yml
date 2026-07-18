@@ -23,46 +23,46 @@ modules:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
    install:
-  install-weak-deps: false
-  packages:
-    # COSMIC core
-    - cosmic-edit
-    - cosmic-files
-    - cosmic-session
-    - cosmic-store
-    - cosmic-term
+     install-weak-deps: false
+     packages:
+       # COSMIC core
+      - cosmic-edit
+      - cosmic-files
+      - cosmic-session
+      - cosmic-store
+      - cosmic-term
 
-    # COSMIC defaults
-    - cosmic-initial-setup
-    - cosmic-player
-    - flatpak
-    - gnome-keyring-pam
-    - toolbox
+      # COSMIC defaults
+      - cosmic-initial-setup
+      - cosmic-player
+      - flatpak
+      - gnome-keyring-pam
+      - toolbox
 
-    # Applications
-    - gnome-calculator
-    - okular
+      # Applications
+      - gnome-calculator
+      - okular
 
-    # Terminal
-    - fastfetch
-    - micro
-    - starship
+      # Terminal
+      - fastfetch
+      - micro
+      - starship
 
-    # Virtualization
-    - qemu-kvm
-    - libvirt
-    - virt-manager
-    - virt-viewer
+      # Virtualization
+      - qemu-kvm
+      - libvirt
+      - virt-manager
+      - virt-viewer
 
-    # Networking
-    - nmap
-    - mtr
-    - iperf3
-    - bind-utils
-    - wireshark-cli
+      # Networking
+      - nmap
+      - mtr
+      - iperf3
+      - bind-utils
+      - wireshark-cli
 
-    # Browser
-    - brave-browser
+      # Browser
+      - brave-browser
 
   - type: brew
   - type: dnf
