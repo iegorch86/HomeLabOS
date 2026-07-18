@@ -46,7 +46,8 @@ modules:
         - libwacom-data
         - fprintd
         - fprintd-pam
-
+        - maliit-keyboard
+        
         # Applications
         - gnome-calculator
         - okular
@@ -66,6 +67,7 @@ modules:
         - sane-backends-drivers-scanners
         - sane-airscan
         - libjpeg8
+        - simple-scan
         
         # Printing
         - cups
