@@ -1,0 +1,510 @@
+# Load firmware for this printer.
+
+#ACTION!="add", GOTO="mud_rules_end"
+
+#SUBSYSTEM=="usb_device", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="1e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M5000-6000
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="1e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0e20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="1e20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="7e20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2e20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6535NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f11", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="5e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="7e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="8e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="3e20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="4e20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="4e21", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="5e20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6600
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="3f20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6600N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="4f20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6600W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="5f22", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6600NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="5f20", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6602W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="5f21", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6000
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0edc", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6550
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0edd", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6550NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ede", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6000NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ed8", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6600
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0edf", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6600NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ee0", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6700D
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0eca", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6700DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ee1", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6700DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ecb", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6760D
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f02", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6760DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ecc", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7100D
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ee2", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M7100DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ecf", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7100DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ed0", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7100DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f62", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7108DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f00", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7160DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f03", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6800FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ecd", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6860FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ef7", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6860FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ece", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7200FD
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ed1", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7200FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ed2", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7200FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ed3", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7300FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ed4", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7300FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0ed5", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2100
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2030", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2100NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2031", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2230", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2231", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2232", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2233", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2100A
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2032", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2100ANW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2033", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200A
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2234", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200AN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2235", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200AW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2236", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200ANW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2237", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200F
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2240", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200FN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2241", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200FW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2242", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2200FNW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2243", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2300
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0839", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2300A
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0840", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2300W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0842", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2300AW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0843", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2300NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0845", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2300ANW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0846", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4000ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2733", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4000ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2734", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4005ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2735", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4000FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff39", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4000FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff3a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4005FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff3b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4100FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff3d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4100FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff3c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# L2710FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff4b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M29DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff4a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5100ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2730", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5105ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2731", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5100ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2732", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5100FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2740", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5105FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2741", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5100FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2742", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5106ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2710", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5106ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="270f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5106FDN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2711", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5106FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2712", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#4020功能升级项目
+#BM5110ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2714", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM5110ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2715", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# CM1100DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a430", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# CM1100DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a431", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# CM1100ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a432", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# CM1100ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a433", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# CM1100FDW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a441", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M6518NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff52", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M7170DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff53", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a421", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a422", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a423", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a424", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a42a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a42b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a42c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a42d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a426", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a427", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a428", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6200NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a429", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6000
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a41e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6000NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a41d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6550
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a41f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# MS6550NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a420", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6518NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a425", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6568NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a443", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6700DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f3a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6701DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f3b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M67002DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f3c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6703DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f3d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6704DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f3e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6705DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f3f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6706DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f40", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6707DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f41", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6708DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f42", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6709DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f43", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6710DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f44", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6760DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f45", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6763DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f46", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6770DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f47", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7310DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f34", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7312DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f35", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7318DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f36", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7310DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f37", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7312DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f38", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7318DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f39", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6503
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0826", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6503NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0827", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6500NW-Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0829", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6550NW-Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0832", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6535N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0837", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7108DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f59", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# LP-5103V2R31-去双面项目
+# M6700
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f68", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7000
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f69", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7000D
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f4e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7000DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f4f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6708D
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f4c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6708DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f4d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6595NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0858", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6768DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f6e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7160DW-Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f6c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6760DW-Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f45", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2345W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="085d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2336W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="085e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6789DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f7b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M7189DW Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f7c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#2122-Lite
+#BM2301W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0863", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM2303W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0864", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#2122V1R6
+#BM2312NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0866", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#2122-1800
+#BM1800
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0869", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM1800W
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="086a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# M6535NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="086b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M6507N  2013MFP-V3R12
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="086d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM2316W 2122V1R8
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0871", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM2318NW 2122V1R8
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0872", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M7010DN 5103V2R49-MPS FB
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fac", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M7140DN LP-4020V1R61-KX
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fb6", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5140ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="277a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+LABEL="mud_rules_end"
+
+
+

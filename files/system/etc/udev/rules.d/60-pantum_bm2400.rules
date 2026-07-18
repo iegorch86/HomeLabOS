@@ -1,0 +1,32 @@
+# Load firmware for this printer.
+
+#ACTION!="add", GOTO="mud_rules_end"
+
+# BM2400
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f96", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2460
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fa5", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2400NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f99", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2460NW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fa6", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2400A
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f9c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2460A
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fa7", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2400ANW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f9f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM2460ANW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fa8", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+LABEL="mud_rules_end"
+
+
+

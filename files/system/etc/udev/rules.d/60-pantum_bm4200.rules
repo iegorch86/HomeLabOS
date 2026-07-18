@@ -1,0 +1,72 @@
+# Load firmware for this printer.
+
+#ACTION!="add", GOTO="mud_rules_end"
+
+# BM4200D
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f75", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4200DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f76", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4200DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f77", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4200AD
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f78", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4200ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f79", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4200ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f7a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4240ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f8e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4208D
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f88", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4208DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f89", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4208DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f8a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4208AD
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f8b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4208ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f8c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4208ADW
+#SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f8d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4248ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f8f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4300ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0faa", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4308ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fab", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#LP2133V1R2 ELS
+# BM4210DW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0faf", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4210ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fb0", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4210ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fb1", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4310ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fb2", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4310ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0fb3", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+LABEL="mud_rules_end"
+
+
+

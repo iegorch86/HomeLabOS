@@ -1,0 +1,77 @@
+# Load firmware for this printer.
+
+#ACTION!="add", GOTO="mud_rules_end"
+
+# BM5200ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2725", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5200ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2726", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5208ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2751", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5208ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2752", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5200ADN-Series
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2762", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5200ADW-Series
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2763", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5220ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2758", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5220ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2759", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5225ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="275a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5225ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="275b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5210ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="275c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5210ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="275d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5285ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="275e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5205ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2729", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5205ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2757", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5218ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2764", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5218ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2765", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5300ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="275f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM5300ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2761", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4500ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="276c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4500ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="276d", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4508ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="276e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# BM4508ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="276f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+LABEL="mud_rules_end"
+
+
+
