@@ -1,10 +1,10 @@
-<a href="https://github.com/iegorch86/gooseos">
-  <img src="assets/main-logo.png" width="320" alt="GooseOS logo">
-</a>
+<p align="center">
+  <img src="assets/main-logo.png" alt="GooseOS Logo" width="300">
+</p>
 
-<h1 align="right">GooseOS</h1>
+<h1 align="center">GooseOS</h1>
 
-<p align="right">
+<p align="center">
   <strong>Personal Fedora Atomic COSMIC image built with BlueBuild.</strong><br>
   Fast. Stable. Canadian.
 </p>
