@@ -20,6 +20,8 @@ Although GooseOS is built primarily for personal use, anyone is welcome to test 
 - Learning how the custom Atomic system model works
 - Applying that knowledge across my Fedora Atomic desktop and my uCore/Fedora CoreOS home server
 
+## BlueBuild_Docs
+
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 After setup, it is recommended you update this README to describe your custom image.
