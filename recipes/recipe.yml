@@ -28,7 +28,7 @@ modules:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
   #install-weak-deps: false
-  packages:
+    packages:
     # COSMIC desktop only
     - "@cosmic-desktop"
 
