@@ -13,6 +13,7 @@ modules:
         - atim/starship
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+        - https://negativo17.org/repos/fedora-multimedia.repo
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
@@ -118,6 +119,7 @@ modules:
 
         # General diagnostics
         - htop
+        - btop
         - iotop-c
         - lsof
         - strace
