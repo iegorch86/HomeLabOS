@@ -6,7 +6,7 @@ modules:
     files:
       - source: system
         destination: /
-  - type: initramfs 
+   
   - type: dnf
     repos:
       copr:
@@ -120,4 +120,4 @@ modules:
 
     
 
-  - type: signing
+  - type: initramfs
