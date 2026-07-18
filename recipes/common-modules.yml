@@ -130,6 +130,10 @@ modules:
   - type: script
     scripts:
         - set-default-wallpaper.sh
+  - type: script
+    no-cache: true
+    scripts:
+        - set-gooseos-version.sh
     
   - type: brew
 
