@@ -1,4 +1,4 @@
-name: bluebuild
+name: gooseos-nvidia-open
 on:
   schedule:
     - cron:
@@ -28,7 +28,6 @@ jobs:
         recipe:
           # !! Add your recipes here
           - homelabos-nvidia.yml
-          - homelabos-intel.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
