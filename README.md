@@ -1,5 +1,16 @@
 # GooseOS &nbsp; [![Intel Build](https://github.com/iegorch86/homelabos/actions/workflows/build-intel.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build-intel.yml) [![NVIDIA Build](https://github.com/iegorch86/homelabos/actions/workflows/build-nvidia.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build-nvidia.yml)
 
+<p align="center">
+  <img src="assets/main-logo.png" alt="GooseOS Logo" width="220">
+</p>
+
+<h1 align="center">GooseOS</h1>
+
+<p align="center">
+  <strong>Personal Fedora Atomic COSMIC image built with BlueBuild.</strong><br>
+  Fast. Stable. Canadian.
+</p>
+
 ## What is GooseOS?
 
 GooseOS is my personal [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) workstation image with Cosmic desktop built with [BlueBuild](https://blue-build.org/).
