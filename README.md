@@ -6,29 +6,67 @@ After setup, it is recommended you update this README to describe your custom im
 
 ## Installation
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+> [!WARNING]
+> These are personal experimental Fedora Atomic images. Use them at your own discretion.
 
-To rebase an existing atomic Fedora installation to the latest build:
+Two variants are available:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/iegorch86/homelabos:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/iegorch86/homelabos:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+- **HomeLabOS NVIDIA** — for systems using supported NVIDIA graphics and the NVIDIA open kernel modules.
+- **HomeLabOS Intel/Generic** — for Intel, AMD, virtual machines, and systems that do not require the NVIDIA driver.
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+### NVIDIA version
+
+First rebase to the unsigned image:
+
+```bash
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/iegorch86/homelabos-nvidia:latest
+```
+
+Reboot:
+
+```bash
+systemctl reboot
+```
+
+Then switch to the signed image:
+
+```bash
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/iegorch86/homelabos-nvidia:latest
+```
+
+Reboot again:
+
+```bash
+systemctl reboot
+```
+
+### Intel / generic version
+
+First rebase to the unsigned image:
+
+```bash
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/iegorch86/homelabos-intel:latest
+```
+
+Reboot:
+
+```bash
+systemctl reboot
+```
+
+Then switch to the signed image:
+
+```bash
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/iegorch86/homelabos-intel:latest
+```
+
+Reboot again:
+
+```bash
+systemctl reboot
+```
+
+The `latest` tag points to the newest build of each variant.
 
 ## ISO
 
