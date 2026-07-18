@@ -1,6 +1,4 @@
-# GooseOS &nbsp; [![Intel Build](https://github.com/iegorch86/homelabos/actions/workflows/build-intel.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build-intel.yml)
-
-# GooseOS &nbsp; [![NVIDIA Build](https://github.com/iegorch86/homelabos/actions/workflows/build-nvidia.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build-nvidia.yml)
+# GooseOS &nbsp; [![Intel Build](https://github.com/iegorch86/homelabos/actions/workflows/build-intel.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build-intel.yml) [![NVIDIA Build](https://github.com/iegorch86/homelabos/actions/workflows/build-nvidia.yml/badge.svg)](https://github.com/iegorch86/homelabos/actions/workflows/build-nvidia.yml)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
