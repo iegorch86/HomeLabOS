@@ -64,7 +64,6 @@ modules:
 
     # browser
     - brave-browser
-    # Firefox intentionally KEPT as a backup browser — not removed below.
     # Homebrew (not in the base)
   - type: brew
 
