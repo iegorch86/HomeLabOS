@@ -20,5 +20,9 @@ modules:
       PRETTY_NAME: GooseOS NVIDIA Open
       VARIANT: NVIDIA Open
       VARIANT_ID: nvidia-open
+  - type: script
+    no-cache: true
+    scripts:
+      - set-gooseos-version.sh
       
   - type: signing
