@@ -122,5 +122,5 @@ They're affectionately known as **cobra chickens**—a nickname earned by confid
 
 If you've encountered one, no further explanation is necessary.
 
-No geese were annoyed during the build process.
+No geese were annoyed during the build process
 ...that we know of.
