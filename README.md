@@ -2,9 +2,9 @@
   <img src="assets/main-logo.png" width="320" alt="GooseOS logo">
 </a>
 
-<h1 align="center">GooseOS</h1>
+<h1 align="right">GooseOS</h1>
 
-<p align="center">
+<p align="right">
   <strong>Personal Fedora Atomic COSMIC image built with BlueBuild.</strong><br>
   Fast. Stable. Canadian.
 </p>
