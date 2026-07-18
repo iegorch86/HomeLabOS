@@ -1,5 +1,5 @@
 <a href="https://github.com/iegorch86/gooseos">
-  <img src="assets/logo.png" width="320" alt="GooseOS logo">
+  <img src="assets/main-logo.png" width="320" alt="GooseOS logo">
 </a>
 
 <h1 align="center">GooseOS</h1>
