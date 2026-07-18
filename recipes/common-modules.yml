@@ -118,6 +118,6 @@ modules:
           - io.podman_desktop.PodmanDesktop
           - io.missioncenter.MissionCenter
 
-      - scope: user
+    
 
   - type: signing
