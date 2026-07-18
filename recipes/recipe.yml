@@ -1,5 +1,0 @@
-strategy:
-  matrix:
-    recipe:
-      - recipes/homelabos-nvidia.yml
-      - recipes/homelabos-intel.yml
