@@ -2,7 +2,7 @@
 
 ## What is GooseOS?
 
-GooseOS is my personal [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) workstation image withi Cosmic desktop built with [BlueBuild](https://blue-build.org/).
+GooseOS is my personal [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) workstation image with Cosmic desktop built with [BlueBuild](https://blue-build.org/).
 
 It started as a way to create a clean, reproducible desktop that contains the applications, tools, and configuration I use every day, without reinstalling or manually configuring a new system each time.
 
