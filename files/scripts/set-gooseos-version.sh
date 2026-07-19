@@ -40,7 +40,7 @@ fi
 
 RELEASE_CHANNEL="${RELEASE_TYPE:-stable}"
 
-PRETTY_NAME_VALUE="GooseOS ${EDITION} — build ${BUILD_DATE} — version ${BASE_VERSION} — ${RELEASE_CHANNEL}"
+PRETTY_NAME_VALUE="GooseOS ${EDITION}_build ${BUILD_DATE}_version ${BASE_VERSION}_${RELEASE_CHANNEL}"
 
 sed -i \
     -e 's/^NAME=.*/NAME="GooseOS"/' \
