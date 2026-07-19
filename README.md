@@ -82,7 +82,7 @@ Reboot again:
 systemctl reboot
 ```
 
-### Intel / generic version
+### Intel/AMD version
 
 First rebase to the unsigned image:
 
