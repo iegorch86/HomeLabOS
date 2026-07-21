@@ -12,9 +12,9 @@ modules:
   - type: os-release
     properties:
       NAME: GooseOS
-      PRETTY_NAME: GooseOS Intel TEST
-      VARIANT: Intel / AMD - test
-      VARIANT_ID: intel test
+      PRETTY_NAME: GooseOS TEST
+      VARIANT: TEST
+      VARIANT_ID: TEST
   - type: script
     no-cache: true
     scripts:
