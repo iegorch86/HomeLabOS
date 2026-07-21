@@ -8,7 +8,7 @@ base-image: ghcr.io/blue-build/base-images/fedora-base
 image-version: latest
 
 modules:
-  - from-file: common-modules.yml
+  - from-file: common-test-modules.yml
   - type: os-release
     properties:
       NAME: GooseOS
