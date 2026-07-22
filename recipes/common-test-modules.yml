@@ -19,6 +19,11 @@ modules:
     
     group-install:
       install-weak-deps: false
+      exclude:
+        - gdm
+        - gnome-shell
+        - gnome-session
+        - gnome-session-wayland-session
       packages:
         - cosmic-desktop-environment
         - virtualization
@@ -32,6 +37,7 @@ modules:
         - toolbox
         - playerctl
         - pop-sound-theme
+        - lxpolkit
 
         # Dell Latitude / laptop hardware support
         - bolt
@@ -46,6 +52,7 @@ modules:
         # Applications
         - gnome-calculator
         - okular
+        - waydroid
 
         # Profiling
         - sysprof
@@ -85,6 +92,7 @@ modules:
         - net-tools
         - tcpdump
         - traceroute
+        - tailscale
         - ethtool
 
         # Hardware diagnostics
