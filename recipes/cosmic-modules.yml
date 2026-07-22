@@ -1,0 +1,164 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+   
+  - type: dnf
+    repos:
+      copr:
+        - atim/starship
+      files:
+        - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+        - https://negativo17.org/repos/fedora-multimedia.repo
+        - https://packages.microsoft.com/yumrepos/edge/config.repo         
+      keys:
+        - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+        - https://packages.microsoft.com/keys/microsoft.asc  
+        - https://zoom.us/linux/download/pubkey
+        
+    install:
+      install-weak-deps: false
+      exclude:
+        - gdm
+        - gnome-shell
+        - gnome-session
+        - gnome-session-wayland-session
+        - gnome-system-monitor
+        - nheko
+        - rhythmbox
+        - thunderbird
+        - libreoffice
+      packages:
+        - cosmic-desktop-environment
+        - virtualization
+        
+    install:
+      install-weak-deps: false
+      packages:
+        
+        # COSMIC integration
+        - flatpak
+        - gnome-keyring-pam
+        - toolbox
+        - playerctl
+        - pop-sound-theme
+        - lxpolkit
+
+        # Dell Latitude / laptop hardware support
+        - bolt
+        - fwupd
+        - iio-sensor-proxy
+        - libwacom
+        - libwacom-data
+        - fprintd
+        - fprintd-pam
+        - maliit-keyboard
+        
+        # Applications
+        - gnome-calculator
+        - waydroid
+        - https://zoom.us/client/latest/zoom_x86_64.rpm
+
+        # Profiling
+        - sysprof
+        - bpftrace
+        - perf
+        
+        # Terminal
+        - fastfetch
+        - micro
+        - starship
+        
+        # Scanning
+        - sane-backends
+        - sane-backends-drivers-scanners
+        - sane-airscan
+        - libjpeg8
+        - gscan2pdf
+        
+        # Printing
+        - cups
+        - cups-pk-helper
+        - system-config-printer
+        - cups-filters
+        - cups-filters-driverless
+        - cups-browsed
+        - ipp-usb
+        - avahi
+        - bluez-cups
+                
+        # Network diagnostics
+        - nmap
+        - mtr
+        - iperf3
+        - bind-utils
+        - wireshark-cli
+        - netcat
+        - net-tools
+        - tcpdump
+        - traceroute
+        - tailscale
+        - ethtool
+
+        # Hardware diagnostics
+        - nvme-cli
+        - smartmontools
+        - lm_sensors
+        - lshw
+        - pciutils
+        - usbutils
+        - dmidecode
+
+        # Storage and filesystem support
+        - cifs-utils
+        - nfs-utils
+        - ntfs-3g
+        - exfatprogs
+        - dosfstools
+        - gdisk
+        - gparted
+
+        # General diagnostics
+        - htop
+        - btop
+        - iotop-c
+        - lsof
+        - strace
+
+        # Browser
+        - brave-browser
+        - microsoft-edge-stable
+        
+  - type: script
+    scripts:
+        - set-default-wallpaper.sh
+
+  - type: brew
+
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          
+          - org.kde.kate
+          - org.kde.kdenlive
+          - org.kde.gwenview
+          - org.shotcut.Shotcut
+          - md.obsidian.Obsidian
+          - com.obsproject.Studio
+          - org.pvermeer.WebAppHub
+          - com.ranfdev.DistroShelf
+          - com.bambulab.BambuStudio
+          - com.github.tchx84.Flatseal
+          - io.github.flattool.Warehouse
+          - io.podman_desktop.PodmanDesktop
+          - io.missioncenter.MissionCenter
+         
+    
+
+  - type: initramfs
