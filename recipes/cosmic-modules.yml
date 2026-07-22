@@ -14,11 +14,28 @@ modules:
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
         - https://negativo17.org/repos/fedora-multimedia.repo
+        - https://packages.microsoft.com/yumrepos/edge/config.repo         
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-
+        - https://packages.microsoft.com/keys/microsoft.asc  
+        - https://zoom.us/linux/download/pubkey
+        
     install:
       install-weak-deps: false
+      exclude:
+        - gdm
+        - gnome-shell
+        - gnome-session
+        - gnome-session-wayland-session
+        - gnome-system-monitor
+        - nheko
+        - rhythmbox
+        - thunderbird
+        - libreoffice
+      packages:
+        - cosmic-desktop-environment
+        - virtualization
+        
       packages:
         # COSMIC desktop
         - cosmic-edit
